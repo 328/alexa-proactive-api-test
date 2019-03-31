@@ -1,0 +1,22 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "__SKILLID__",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": ""
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": ""
+          },
+          "ja-JP": {
+            "eTag": ""
+          }
+        }
+      }
+    }
+  }
+}

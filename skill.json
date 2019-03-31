@@ -1,0 +1,51 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+      "ja-JP": {
+          "summary": "私三ツ矢さん",
+          "examplePhrases": [
+            "アレクサ、三ツ矢さんを開いて"
+          ],
+          "keywords": [
+            "三ツ矢さん"
+          ],
+          "name": "三ツ矢のアプリ",
+          "description": "通知APIアプリ"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "__LAMBDA_ENDPOINT__"
+        }
+      }
+    },
+    "permissions": [
+      {
+        "name": "alexa::devices:all:notifications:write"
+      }
+    ],
+    "events": {
+        "publications": [
+          {
+            "eventName": "AMAZON.MessageAlert.Activated"
+          }
+        ],
+        "endpoint": {
+          "uri": "__LAMBDA_ENDPOINT__"
+        },
+        "subscriptions": [
+          {
+            "eventName": "SKILL_PROACTIVE_SUBSCRIPTION_CHANGED"
+          }
+        ]
+    },
+    "manifestVersion": "1.0"
+  }
+}

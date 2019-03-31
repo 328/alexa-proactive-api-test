@@ -1,0 +1,16 @@
+service: subscribe-event-lambda
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 128
+  timeout: 60
+  stage: dev
+  versionFunctions: 1
+  region: ap-northeast-1
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+     - alexaSkill: __SKILLID__
